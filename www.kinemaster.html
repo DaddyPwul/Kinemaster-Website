@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- Header --><html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169919908-1"></script> -->
+  <script async src="https://www.googletagmanager.com/gtag/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169919908-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="KineMaster is a powerful tool for everyone to bring their stories to life, available on Android, Chrome OS, iPhone and iPad. KineMaster offers a robust video tool kit, including multiple video layers, color filters and adjustments, blending modes, the ability to cut and trim clips, multi-track audio, volume envelope control, chroma key, and the KineMaster Asset Store where much more content is available for download.">
+  <meta name="keywords" content="KineMaster">
+  <title>KineMaster - Mobile Video Editor</title>
+  <!-- Favicon icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/img-apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/img-favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/img-favicon-16x16.png">
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/animations/scale.css">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/themes/light.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="css/css-countrySelect.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/css-style.min.css">
+</head>
+
+<body>
+<!-- Menu -->
+  <div id="kmlogo">
+    <img src="images/img-logo.png" alt="KineMaster Logo">
+  </div>
+<!-- Header -->
+  <header class="header">
+        <div class="logo">
+      <a href="?lang=en.html"><img src="images/img-logo-white.png" alt="KineMaster Logo"></a>
+    </div>
+        <div class="menu-right">
+      <div id="lang-picker" class="dropdown">
+        <button id="lang-selected" class="dropdown__title">English</button>
+        <ul id="lang-list" class="dropdown__menu">
+          <li><a href="?lang=en.html" value="en">English</a></li>
+          <li><a href="?lang=ko.html" value="ko">&#54620;&#44397;&#50612;</a></li>
+          <li><a href="?lang=ja.html" value="ja">&#26085;&#26412;&#35486;</a></li>
+          <li><a href="?lang=chs.html" value="chs">&#31616;&#20307;&#20013;&#25991;</a></li>
+          <li><a href="?lang=cht.html" value="cht">&#32321;&#20307;&#20013;&#25991;</a></li>
+          <li><a href="?lang=id.html" value="cht">Indonesian</a></li>
+          <li><a href="?lang=th.html" value="cht">&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;</a></li>
+        </ul>
+      </div>
+      <div class="nav-auth hidden">
+                <div class="nav-signin"><a href="auth.html">Sign In</a></div>
+              </div>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="?lang=en.html">Home</a></li>
+                <li><a href="?lang=en.html">About</a></li>
+                                                <li><a href="https://community.kinemaster.com/" target="_blank">Community</a></li>
+                                                <li class="mobile">
+                  <div class="divider"></div>
+                </li>
+                <li class="mobile"><a href="oss.html">Open Source</a></li>
+                <li class="mobile"><a id="nav-privacy" href="#">Privacy</a></li>
+                <li class="mobile"><a id="nav-tos" href="#">Terms of Service</a></li>
+                <li class="mobile"><a href="https://www.kinemastercorp.com" target="_blank">Corporate Information</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <nav class="navbar-sidebar">
+    <ul class="social">
+      <li>
+        <a href="https://www.tiktok.com/@kinemaster" target="_blank" alt="KineMaster TikTok Channel" title="KineMaster TikTok Channel">
+          <i class="icon fab fa-tiktok"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/kinemaster" target="_blank" alt="KineMaster YouTube Channel" title="KineMaster YouTube Channel">
+          <i class="icon fab fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/KineMaster.US/" target="_blank" alt="KineMaster Facebook Page" title="KineMaster Facebook Page">
+          <i class="icon fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/kinemaster/" target="_blank" alt="KineMaster Instagram Channel" title="KineMaster Instagram Channel">
+          <i class="icon fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/KineMaster" target="_blank" alt="KineMaster Twitter Channel" title="KineMaster Twitter Channel">
+          <i class="icon fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Background video -->
+  <div class="video-cover">
+    <div class="video-container"></div>
+  </div>
+  <div class="video-overlay"></div>
+
+  <main class="main-container mainpage" id="mainpage">
+
+    <section class="section hero fullscreen fp-auto-height-responsive" data-anchor="hero">
+      <div class="section-wrapper">
+        <div class="slide">
+          <div class="slide-flex">
+            <h1 class="hero-title">
+              Create. Edit. Share.            </h1>
+            <div class="hero-copy">
+              <p>Transform your videos with KineMaster!</p>
+              <p>Powerful tools, easy to use.</p>
+            </div>
+
+            <div class="btn-badge">
+              <a href="https://apps.apple.com/us/app/kinemaster-video-editor/id1609369954" target="_blank">
+                <img src="images/img-badge-appstore.svg" alt="Download KineMaster on the App Store">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.nexstreaming.app.kinemasterfree" target="_blank">
+                <img src="images/img-badge-playstore.svg" alt="Get KineMaster On Google Play">
+              </a>
+            </div>
+
+            <div class="social-mobile">
+              <div class="social-link">
+                <a href="https://www.tiktok.com/@kinemaster" target="_blank" alt="KineMaster TikTok Channel" title="KineMaster TikTok Channel">
+                  <i class="icon fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/kinemaster" target="_blank" title="KineMaster YouTube Channel">
+                  <i class="icon fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/KineMaster.US/" target="_blank" title="KineMaster Facebook Page">
+                  <i class="icon fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/kinemaster/" target="_blank" title="KineMaster Instagram Channel">
+                  <i class="icon fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/KineMaster" target="_blank" title="KineMaster Twitter Channel">
+                  <i class="icon fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features fullscreen fp-auto-height-responsive bg-img bg-color" data-anchor="features" data-bg-img="https://d2hakk7asmds57.cloudfront.net/cdn/v2/img/features.jpg" data-bg-color="rgba(0, 0, 0, 0.5)">
+      <div class="section-wrapper">
+        <h1 class="section-title">Features</h1>
+        <div class="swiper-container swiper-features slider-container fade-2 swiper-container-horizontal">
+          <div class="item-list swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="feature-list layer">
+                <div class="feature-header">
+                  <img src="images/img-feature6.png" alt="Asset Store">
+                  <h2 class="feature-title">
+                    Awesome Assets                  </h2>
+                </div>
+                <p class="feature-desc">
+                  Download incredible effects, music, stickers, fonts and much more from the KineMaster Asset Store!                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list layer">
+                <div class="feature-header">
+                  <img src="images/img-feature7.png" alt="Get Projects">
+                  <h2 class="feature-title">
+                    Get Projects                  </h2>
+                </div>
+                <p class="feature-desc">
+                  Download KineMaster projects directly to your device! Remix them with your own pictures and videos!                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list layer">
+                <div class="feature-header">
+                  <img src="images/img-feature8.png" alt="Backup &amp; Share">
+                  <h2 class="feature-title">
+                    Backup &amp; Share                  </h2>
+                </div>
+                <p class="feature-desc">
+                  Save your KineMaster projects as .kine files to keep your hard work safe or share and let others to start editing where you left off!                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list blend">
+                <div class="feature-header">
+                  <img src="images/img-feature1.png" alt="Blending Modes">
+                  <h2 class="feature-title">
+                    Blending Modes                  </h2>
+                </div>
+                <p class="feature-desc">
+                  Eight different blending options allow videos and images to be overlaid creating magical, artistic effects.                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list reverse">
+                <div class="feature-header">
+                  <img src="images/img-feature2.png" alt="Reverse">
+                  <h2 class="feature-title">
+                    Reverse                  </h2>
+                </div>
+                <p class="feature-desc">
+                  Turn time around with the reverse tool, making focal shifts, in-camera transitions, and other video edits easy.                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list chroma">
+                <div class="feature-header">
+                  <img src="images/img-feature3.png" alt="Chroma Key">
+                  <h2 class="feature-title">
+                    Chroma Key                  </h2>
+                </div>
+                <p class="feature-desc">
+                  Use chroma key to composite two (or more!) videos, including an alpha mask preview and fine-tuning of the mask edges.                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list hires">
+                <div class="feature-header">
+                  <img src="images/img-feature4.png" alt="High Resolution">
+                  <h2 class="feature-title">
+                    High Resolution                  </h2>
+                </div>
+                <p class="feature-desc">
+                  Use your high-end camera to its full potential by editing and exporting 4K video projects at up to 60 fps.                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list layer">
+                <div class="feature-header">
+                  <img src="images/img-feature5.png" alt="Video Layers">
+                  <h2 class="feature-title">
+                    Video Layers                  </h2>
+                </div>
+                <p class="feature-desc">
+                  Play back multiple videos: up to 9 at a time, depending on the device and video resolution.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination bar"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- Footer -->
+  <footer id="site-footer" class="footer">
+    <div class="footer-left">
+      <a href="https://www.kinemastercorp.com" target="_blank">Corporate Information</a>&nbsp;&nbsp;&amp;vert;&nbsp;&nbsp;
+      <a href="oss.html">Open Source</a>&nbsp;&nbsp;&amp;vert;&nbsp;&nbsp;
+      <a id="link-privacy" href="#">Privacy</a>&nbsp;&nbsp;&amp;vert;&nbsp;&nbsp;
+      <a id="link-tos" href="#">Terms of Service</a>
+    </div>
+    <div class="footer-right">
+      <span class="note">&copy; 2022 <a href="https://www.kinemastercorp.com" target="_blank">KineMaster Corporation</a></span>
+    </div>
+  </footer>
+
+  <script src="js/3.5.1-jquery.min.js"></script>
+  <script src="js/1.12.1-jquery-ui.min.js"></script>
+  <script src="js/js-swiper.min.js"></script>
+  <script src="js/vendors-scrolloverflow.min.js"></script>
+  <script src="js/2.9.7-jquery.fullpage.min.js"></script>
+  <script src="js/1.19.2-jquery.validate.min.js"></script>
+  <script src="js/2.2.1-js.cookie.min.js"></script>
+  <script src="js/latest-toastr.min.js"></script>
+  <script src="js/js-all.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="js/1.2.1-geodatasource-cr.min.js"></script>
+  <script src="js/js-jquery.dataTables.min.js"></script>
+
+  <script type="text/javascript">
+    var faTikTok = {
+        prefix: 'fab',
+        iconName: 'tiktok',
+        icon: [24, 24, [], 'e001', 'M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z']
+    }
+
+    FontAwesome.library.add(
+        faTikTok
+    )
+  </script>
+
+  <script src="js/js-script.min.js"></script>
+</body>
+</html>

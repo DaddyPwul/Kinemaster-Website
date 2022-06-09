@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- Header --><html class="no-js" lang="zh-TW">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169919908-1"></script> -->
+  <script async src="https://www.googletagmanager.com/gtag/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169919908-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="&#24039;&#24433;&#20316;&#28858;&#19968;&#27454;&#21151;&#33021;&#24375;&#22823;&#30340;&#32232;&#36655;&#36575;&#20214;&#65292;&#33021;&#22816;&#24171;&#21161;&#20320;&#23436;&#25104;&#19968;&#20491;&#26665;&#26665;&#22914;&#29983;&#30340;&#35222;&#38971;&#20316;&#21697;&#12290;&#21487;&#36969;&#29992;&#26044;&#23433;&#21331;&#12289;&#35895;&#27468;Chrome OS&#31995;&#32113;&#12289;iPhone&#21644;iPad&#12290;&#24039;&#24433;&#25552;&#20379;&#20102;&#22810;&#21151;&#33021;&#30340;&#35222;&#38971;&#32232;&#36655;&#31995;&#32113;&#65292;&#21253;&#25324;&#25903;&#25345;&#22810;&#20491;&#35222;&#38971;&#23652;&#12289;&#28670;&#37857;&#38928;&#35373;&#12289;&#35519;&#25972;&#65288;&#33394;&#24425;&#65289;&#12289;&#28151;&#21512;&#27169;&#24335;&#12289;&#21098;&#36655;&#21644;&#35009;&#21098;&#21151;&#33021;&#65292;&#20197;&#21450;&#22810;&#37325;&#38899;&#36556;&#12289;&#38899;&#37327;&#26354;&#32218;&#12289;&#33394;&#24230;&#37749;&#31561;&#31561;&#12290;&#27492;&#22806;&#65292;&#24039;&#24433;&#32032;&#26448;&#21830;&#24215;&#26356;&#26377;&#28023;&#37327;&#32032;&#26448;&#21487;&#20379;&#29992;&#25142;&#19979;&#36617;&#21644;&#20351;&#29992;&#12290;">
+  <meta name="keywords" content="KineMaster">
+  <title>KineMaster - &#25163;&#27231;&#31471;&#23560;&#26989;&#35222;&#38971;&#21098;&#36655;&#22120;</title>
+  <!-- Favicon icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/img-apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/img-favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/img-favicon-16x16.png">
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/animations/scale.css">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.1.0/themes/light.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="css/css-countrySelect.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/css-style.min.css">
+</head>
+
+<body>
+<!-- Menu -->
+  <div id="kmlogo">
+    <img src="images/img-logo.png" alt="KineMaster Logo">
+  </div>
+<!-- Header -->
+  <header class="header">
+        <div class="logo">
+      <a href="?lang=cht.html"><img src="images/img-logo-white.png" alt="KineMaster Logo"></a>
+    </div>
+        <div class="menu-right">
+      <div id="lang-picker" class="dropdown">
+        <button id="lang-selected" class="dropdown__title">English</button>
+        <ul id="lang-list" class="dropdown__menu">
+          <li><a href="?lang=en.html" value="en">English</a></li>
+          <li><a href="?lang=ko.html" value="ko">&#54620;&#44397;&#50612;</a></li>
+          <li><a href="?lang=ja.html" value="ja">&#26085;&#26412;&#35486;</a></li>
+          <li><a href="?lang=chs.html" value="chs">&#31616;&#20307;&#20013;&#25991;</a></li>
+          <li><a href="?lang=cht.html" value="cht">&#32321;&#20307;&#20013;&#25991;</a></li>
+          <li><a href="?lang=id.html" value="cht">Indonesian</a></li>
+          <li><a href="?lang=th.html" value="cht">&#3616;&#3634;&#3625;&#3634;&#3652;&#3607;&#3618;</a></li>
+        </ul>
+      </div>
+      <div class="nav-auth hidden">
+                <div class="nav-signin"><a href="auth.html">Sign In</a></div>
+              </div>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="?lang=cht.html">&#20027;&#38913;</a></li>
+                <li><a href="?lang=cht.html">About</a></li>
+                                                <li><a href="https://community.kinemaster.com/" target="_blank">&#31038;&#21312;</a></li>
+                                                <li class="mobile">
+                  <div class="divider"></div>
+                </li>
+                <li class="mobile"><a href="oss.html">&#38283;&#28304;</a></li>
+                <li class="mobile"><a id="nav-privacy" href="#">&#31169;&#38577;&#25919;&#31574;</a></li>
+                <li class="mobile"><a id="nav-tos" href="#">&#26381;&#21209;&#26781;&#27454;</a></li>
+                <li class="mobile"><a href="https://www.kinemastercorp.com" target="_blank">&#20844;&#21496;&#20449;&#24687;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <nav class="navbar-sidebar">
+    <ul class="social">
+      <li>
+        <a href="https://www.tiktok.com/@kinemaster" target="_blank" alt="&#24039;&#24433; TikTok &#24115;&#34399;" title="&#24039;&#24433; TikTok &#24115;&#34399;">
+          <i class="icon fab fa-tiktok"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/kinemaster" target="_blank" alt="&#24039;&#24433; YouTube &#38971;&#36947;" title="&#24039;&#24433; YouTube &#38971;&#36947;">
+          <i class="icon fab fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/KineMaster.US/" target="_blank" alt="&#24039;&#24433; Facebook &#20027;&#38913;" title="&#24039;&#24433; Facebook &#20027;&#38913;">
+          <i class="icon fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/kinemaster/" target="_blank" alt="&#24039;&#24433; Instagram &#24115;&#34399;" title="&#24039;&#24433; Instagram &#24115;&#34399;">
+          <i class="icon fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/KineMaster" target="_blank" alt="&#24039;&#24433; Twitter &#20027;&#38913;" title="&#24039;&#24433; Twitter &#20027;&#38913;">
+          <i class="icon fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Background video -->
+  <div class="video-cover">
+    <div class="video-container"></div>
+  </div>
+  <div class="video-overlay"></div>
+
+  <main class="main-container mainpage" id="mainpage">
+
+    <section class="section hero fullscreen fp-auto-height-responsive" data-anchor="hero">
+      <div class="section-wrapper">
+        <div class="slide">
+          <div class="slide-flex">
+            <h1 class="hero-title">
+              &#21109;&#20316;. &#32232;&#36655;. &#20998;&#20139;            </h1>
+            <div class="hero-copy">
+              <p>&#29992;&#24039;&#24433;&#21109;&#20316;&#20320;&#30340;&#35222;&#38971;</p>
+              <p>&#21151;&#33021;&#24375;&#22823;&#65292;&#26131;&#26044;&#20351;&#29992;</p>
+            </div>
+
+            <div class="btn-badge">
+              <a href="https://apps.apple.com/us/app/kinemaster-video-editor/id1609369954" target="_blank">
+                <img src="images/img-badge-appstore.svg" alt="Download KineMaster on the App Store">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.nexstreaming.app.kinemasterfree" target="_blank">
+                <img src="images/img-badge-playstore.svg" alt="Get KineMaster On Google Play">
+              </a>
+            </div>
+
+            <div class="social-mobile">
+              <div class="social-link">
+                <a href="https://www.tiktok.com/@kinemaster" target="_blank" alt="KineMaster TikTok Channel" title="KineMaster TikTok Channel">
+                  <i class="icon fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/kinemaster" target="_blank" title="KineMaster YouTube Channel">
+                  <i class="icon fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/KineMaster.US/" target="_blank" title="KineMaster Facebook Page">
+                  <i class="icon fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/kinemaster/" target="_blank" title="KineMaster Instagram Channel">
+                  <i class="icon fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/KineMaster" target="_blank" title="KineMaster Twitter Channel">
+                  <i class="icon fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features fullscreen fp-auto-height-responsive bg-img bg-color" data-anchor="features" data-bg-img="https://d2hakk7asmds57.cloudfront.net/cdn/v2/img/features.jpg" data-bg-color="rgba(0, 0, 0, 0.5)">
+      <div class="section-wrapper">
+        <h1 class="section-title">&#20027;&#35201;&#21151;&#33021;</h1>
+        <div class="swiper-container swiper-features slider-container fade-2 swiper-container-horizontal">
+          <div class="item-list swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="feature-list layer">
+                <div class="feature-header">
+                  <img src="images/img-feature6.png" alt="Asset Store">
+                  <h2 class="feature-title">
+                    &#39640;&#21697;&#36074;&#32032;&#26448;                  </h2>
+                </div>
+                <p class="feature-desc">
+                  &#24478;&#24039;&#24433;&#32032;&#26448;&#21830;&#24215;&#19979;&#36617;&#20778;&#36074;&#30340;&#29305;&#25928;&#12289;&#38899;&#27138;&#12289;&#36028;&#32025;&#12289;&#23383;&#39636;&#20197;&#21450;&#26356;&#22810;&#20839;&#23481;&#65281;                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list layer">
+                <div class="feature-header">
+                  <img src="images/img-feature7.png" alt="Get Projects">
+                  <h2 class="feature-title">
+                    &#29554;&#21462;&#38917;&#30446;                  </h2>
+                </div>
+                <p class="feature-desc">
+                  &#30452;&#25509;&#19979;&#36617;&#24039;&#24433;&#38917;&#30446;&#65281; &#26367;&#25563;&#22294;&#29255;&#21644;&#35222;&#38971;&#65292;&#24555;&#36895;&#29554;&#24471;&#19968;&#20491;&#26032;&#20316;&#21697;&#65281;                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list layer">
+                <div class="feature-header">
+                  <img src="images/img-feature8.png" alt="Backup &amp; Share">
+                  <h2 class="feature-title">
+                    &#20633;&#20221; &amp; &#20998;&#20139;                  </h2>
+                </div>
+                <p class="feature-desc">
+                  &#23559;&#24039;&#24433;&#38917;&#30446;&#20445;&#23384;&#28858;.kine&#26684;&#24335;&#25991;&#20214;&#65292;&#23436;&#25104;&#38917;&#30446;&#20633;&#20221;&#65292;&#36996;&#21487;&#20998;&#20139;&#32102;&#20854;&#20182;&#29992;&#25142;&#65281;&#37325;&#26032;&#23566;&#20837;&#38917;&#30446;&#24460;&#32380;&#32396;&#32232;&#36655;&#65281;                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list blend">
+                <div class="feature-header">
+                  <img src="images/img-feature1.png" alt="Blending Modes">
+                  <h2 class="feature-title">
+                    &#28151;&#21512;&#27169;&#24335;                  </h2>
+                </div>
+                <p class="feature-desc">
+                  8&#31278;&#28151;&#21512;&#27169;&#24335;&#65292;&#23559;&#35222;&#38971;&#21644;&#22294;&#20687;&#30090;&#21152;&#22312;&#19968;&#36215;&#65292;&#21576;&#29694;&#19981;&#19968;&#27171;&#30340;&#35222;&#35258;&#25928;&#26524;&#12290;                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list reverse">
+                <div class="feature-header">
+                  <img src="images/img-feature2.png" alt="Reverse">
+                  <h2 class="feature-title">
+                    &#20498;&#25918;                  </h2>
+                </div>
+                <p class="feature-desc">
+                  &#20351;&#29992;&#20498;&#25918;&#20358;&#25913;&#35722;&#26178;&#38291;&#65292;&#20351;&#28966;&#40670;&#31227;&#21205;&#65292;&#30456;&#27231;&#20839;&#36942;&#28193;&#21644;&#20854;&#20182;&#32232;&#36655;&#35722;&#24471;&#23481;&#26131;&#12290;                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list chroma">
+                <div class="feature-header">
+                  <img src="images/img-feature3.png" alt="Chroma Key">
+                  <h2 class="feature-title">
+                    &#33394;&#24230;&#37749;                  </h2>
+                </div>
+                <p class="feature-desc">
+                  &#20351;&#29992;&#33394;&#24230;&#37749;&#21487;&#20197;&#21512;&#25104;&#20841;&#20491;&#65288;&#25110;&#26356;&#22810;&#65289;&#35222;&#38971;&#65292;&#20197;&#21450;&#38928;&#35261;&#19981;&#36879;&#26126;&#24230;&#33945;&#29256;&#21644;&#35519;&#25972;&#33945;&#29256;&#37002;&#32227;&#30340;&#21151;&#33021;&#12290;                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list hires">
+                <div class="feature-header">
+                  <img src="images/img-feature4.png" alt="High Resolution">
+                  <h2 class="feature-title">
+                    &#39640;&#35299;&#26512;&#24230;                  </h2>
+                </div>
+                <p class="feature-desc">
+                  &#21487;&#32232;&#36655;&#21450;&#36664;&#20986;4K&#24433;&#29255;, &#26368;&#39640;&#21487;&#21040;&#27599;&#31186;60&#24128;&#29575;. &#30433;&#24773;&#20351;&#29992;&#20320;&#30340;&#39640;&#38542;&#30456;&#27231;&#21151;&#33021;                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="feature-list layer">
+                <div class="feature-header">
+                  <img src="images/img-feature5.png" alt="Video Layers">
+                  <h2 class="feature-title">
+                    &#35222;&#38971;&#23652;                  </h2>
+                </div>
+                <p class="feature-desc">
+                  &#25773;&#25918;&#22810;&#20491;&#35222;&#38971;&#65306;&#26368;&#22810;&#25903;&#25345;&#21516;&#26178;&#25773;&#25918;9&#20491;&#35222;&#38971;&#65292;&#26681;&#25818;&#35373;&#20633;&#21644;&#20998;&#36776;&#29575;&#24046;&#30064;&#65292;&#25903;&#25345;&#30340;&#35222;&#38971;&#25976;&#26371;&#26377;&#25152;&#19981;&#21516;&#12290;                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination bar"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- Footer -->
+  <footer id="site-footer" class="footer">
+    <div class="footer-left">
+      <a href="https://www.kinemastercorp.com" target="_blank">&#20844;&#21496;&#20449;&#24687;</a>&nbsp;&nbsp;&amp;vert;&nbsp;&nbsp;
+      <a href="oss.html">&#38283;&#28304;</a>&nbsp;&nbsp;&amp;vert;&nbsp;&nbsp;
+      <a id="link-privacy" href="#">&#31169;&#38577;&#25919;&#31574;</a>&nbsp;&nbsp;&amp;vert;&nbsp;&nbsp;
+      <a id="link-tos" href="#">&#26381;&#21209;&#26781;&#27454;</a>
+    </div>
+    <div class="footer-right">
+      <span class="note">&copy; 2022 <a href="https://www.kinemastercorp.com" target="_blank">KineMaster Corporation</a></span>
+    </div>
+  </footer>
+
+  <script src="js/3.5.1-jquery.min.js"></script>
+  <script src="js/1.12.1-jquery-ui.min.js"></script>
+  <script src="js/js-swiper.min.js"></script>
+  <script src="js/vendors-scrolloverflow.min.js"></script>
+  <script src="js/2.9.7-jquery.fullpage.min.js"></script>
+  <script src="js/1.19.2-jquery.validate.min.js"></script>
+  <script src="js/2.2.1-js.cookie.min.js"></script>
+  <script src="js/latest-toastr.min.js"></script>
+  <script src="js/js-all.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="js/1.2.1-geodatasource-cr.min.js"></script>
+  <script src="js/js-jquery.dataTables.min.js"></script>
+
+  <script type="text/javascript">
+    var faTikTok = {
+        prefix: 'fab',
+        iconName: 'tiktok',
+        icon: [24, 24, [], 'e001', 'M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z']
+    }
+
+    FontAwesome.library.add(
+        faTikTok
+    )
+  </script>
+
+  <script src="js/js-script.min.js"></script>
+</body>
+</html>
