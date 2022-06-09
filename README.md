@@ -1,4 +1,4 @@
 # Kinemaster-Website-Remake
-https://kinemaster.com Copied
+https://kinemaster.com
 
 Enjoy or something idk
